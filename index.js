@@ -126,7 +126,7 @@ function searchIt(cur){
        var topThree = 5 ;
        for(var i = 0 ; i < Math.min(now.length , topThree) ;i++) {
             var each = now[i];
-             console.log(each.key+ ' '+ each.val + '\n');
+           //  console.log(each.key+ ' '+ each.val + '\n');
             newResult.push(each.key);
          }
         res = newResult;
@@ -135,7 +135,7 @@ function searchIt(cur){
     for(let output of res)
         result += `${underLineOpen}`+`${output}`+`${underLineClose}`+`<br>`
     show.innerHTML = result;
-    console.log(res)
+   // console.log(res)
 }
 
 
